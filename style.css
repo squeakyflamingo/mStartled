@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden !important;
+    background-color: lightgrey;
+}
+
+header {
+    height: 55px;
+    padding: 5px 5px 5px 15px;
+    background-color: darkgrey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+header nav {
+    display: flex;
+}
+
+header button {
+    display: block;
+    height: 55px;
+    width: 55px;
+    margin-left: 10px;
+    background-color: darkcyan;
+    border: none;
+}
+
+#card {
+    height: calc(100vh - 65px - 85px);
+    width: 100vw;
+}
+
+#actions {
+    height: 75px;
+    width: calc(100vw - 160px);
+    padding: 5px 80px;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#actions button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: darkblue;
+    color: white;
+}
