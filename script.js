@@ -33,7 +33,7 @@ let noAction = continueAction = () => {
         return
     } 
     
-    loadCard(cards[index++])
+    loadCard(cards[++index])
 }
 
 document.addEventListener("DOMContentLoaded", () => {
