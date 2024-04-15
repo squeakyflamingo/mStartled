@@ -85,7 +85,7 @@ let redCard = {
 }
 
 let yellowCard = {
-    text: "Einstufung in Kategorie 2 (rot)",
+    text: "Einstufung in Kategorie 2 (gelb)",
     addText: "schwere Verletzung, aufgeschobene, dringliche Behandlung",
     response: "restart",
     color: "gold",
