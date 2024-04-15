@@ -3,27 +3,42 @@
     padding: 0;
 }
 
+.d-none {
+    display: none !important;
+}
+
 html {
     font-family: Arial, sans-serif;
     font-size: 12pt;
     height: 100vh;
     width: 100vw;
     overflow: hidden !important;
-    background-color: lightgrey;
+    background-color: whitesmoke;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 6vh calc(100vh - 6vh - 15vh) 15vh;
+}
+
+h1 {
+    font-size: 3vh;
+}
+
+button {
+    display: block;
+    border: none;
+    border-radius: 5px;
 }
 
 header {
-    height: 55px;
-    padding: 5px 5px 5px 15px;
-    background-color: darkgrey;
+    height: 4vh;
+    padding: 1vh 2vw;
+    background-color: grey;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-h1 {
-    font-size: 2em;
 }
 
 header nav {
@@ -31,34 +46,64 @@ header nav {
 }
 
 header button {
-    display: block;
-    height: 55px;
-    width: 55px;
-    margin-left: 10px;
-    background-color: darkcyan;
-    border: none;
+    font-weight: bold;
+    font-size: 2.5vh;
+    height: 4vh;
+    width: 6vh;
+    margin-left: 15px;
 }
 
-#card {
-    height: calc(100vh - 65px - 85px);
-    width: 100vw;
+footer {
+    height: 13vh;
+    width: 100%;
+    padding: 1vh 2vw;
+    background-color: grey;
 }
 
-#actions {
-    height: 75px;
-    width: calc(100vw - 160px);
-    padding: 5px 80px;
-    background-color: darkgrey;
+footer div {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#actions button {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: none;
-    background-color: darkblue;
+footer button {
+    width: 40vw;
+    height: 10vh;
     color: white;
+    font-size: 2.5vh;
+}
+
+footer button#yes {
+    background-color: darkgreen;
+}
+
+footer button#no {
+    background-color: darkred;
+}
+
+footer button#continue {
+    color: black;
+}
+
+footer button#new {
+    background-color: darkblue
+}
+
+#card {
+    height: 100%;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card #text {
+    font-size: 7vh;
+}
+
+#card #addText {
+    font-size: 5vh;
 }

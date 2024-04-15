@@ -14,16 +14,27 @@
     <header>
         <h1>mStartled</h1>
         <nav>
-            <button onclick="resetAction()">Reset</button>
-            <button onclick="infoAction()">Info</button>
+            <button onclick="resetAction()">↻</button>
+            <button onclick="infoAction()">?</button>
         </nav>
-    </header>
-    <div>
-        <div id="card"></div>
-        <div id="actions">
-            <button onclick="noAction()">No</button>
-            <button onclick="yesAction()">Yes</button>
+    </header> 
+    <div id="card">
+        <div id="text">
+            Lade...
         </div>
+        <div id="addText"></div>
     </div>
+    <footer>
+        <div class="d-none" id="dual">
+            <button id="no" onclick="noAction()">Nein</button>
+            <button id="yes" onclick="yesAction()">Ja</button>
+        </div>
+        <div id="single">
+            <button id="continue" onclick="continueAction()">Weiter</button>
+        </div>
+        <div class="d-none" id="restart">
+            <button id="new" onclick="resetAction()">Neustart</button>
+        </div>
+    </footer>
 </body>
 </html>
